@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --texta: #ababb5;
+  --textb: #e3e3e3;
+  --primarya: #2982ff;
+  --primaryb: #4da0ff;
+  --primaryc: #1d6bd7;
+  --primaryd: #192538;
+  --primarye: #0a1529;
+  --primaryf: #462b3f;
+  --primaryg: #2a1d35;
+  --primaryh: #12121c;
+  --primaryi: #231d44;
+  --max-width: 1200px;
+  --section-gap: 90px;
+  --radius: 20px;
+  --button-width: 180px;
+  --transition: all 0.2s ease-in-out;
+  --shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  background: radial-gradient(
+    ellipse at 50% 10%,
+    #2b568a 0%,
+    #0a1a2f 60%,
+    #06101f 100%
+  );
+
+  font-family: 'poppins', sans-serif;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  min-height: 100vh;
+}
+
+nav {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  box-shadow: var(--shadow);
+}
+
+nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: var(--max-width);
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px 0 30px;
+}
+
+nav .logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-direction: column;
+  color: white;
+  font-size: 0.7rem;
+font-weight: 600;
+  cursor: pointer;
+}
+
+nav .options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  font-weight: 550;
+}
+
+nav .options .option {
+  position: relative;
+  color: var(--texta);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+nav .trial{
+    text-decoration: none;
+    color: white;
+    background-color: var(--primaryc);
+    padding: 10px 15px;
+    border-radius: var(--radius);
+    transition: var(--transition);
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+nav .options  .option:hover {
+  color:white;
+
+}
+nav .options  .option:hover::after {
+   content: "";  
+    width: 100%;
+height: 1.5px;
+background-color: rgb(13, 137, 209);
+position: absolute;
+/* bottom: 0px; */
+left: 0;
+margin-top: 40px;
+animation: underline 0.3s linear forwards;
+
+}
+
+nav .trial:hover{
+  box-shadow: 0px 5px 10px rgb(255, 255, 255, 0.1);
+}
+
+@keyframes underline {
+  from {
+    
+    width: 50%;
+  }
+  to {
+    
+    width: 100%;
+  }
+}
+nav img {
+  height: auto;
+  width: 120px;
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
+}
