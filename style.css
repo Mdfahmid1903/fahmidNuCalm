@@ -191,6 +191,10 @@ nav .options.active{
   
 }
 
+.hero{
+  width: 100%;
+
+}
 .hero .container{
   display: flex;
   align-items: center;
@@ -293,6 +297,32 @@ animation: pulse 2s ease-out  infinite;
 
 }
 
+.hero-video {
+  position: fixed;
+  top: 0;
+  left: 0; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+}
+
+.display{
+display: none;
+}
+
+.hero-video .fa-xmark{
+   position: absolute;
+   top: 30px ;
+   right: 30px;
+   font-size: 2rem;
+   color: grey;
+   cursor: pointer;
+}
+
 @keyframes pulse {
   0% {
     box-shadow: 0 0 10px 10px   rgba(17, 128, 219, 0.9);
@@ -305,3 +335,50 @@ animation: pulse 2s ease-out  infinite;
     box-shadow: 0 0 10px 10px  rgba(17, 128, 219, 0.5);
   }
 }
+
+@media (max-width:1024px) {
+  .hero .container{
+    flex-wrap: wrap;
+
+  }
+  .hero-text{
+    width: 100%;
+  padding: 0 30px;
+  }
+}
+
+@media (max-width:480px){
+  .hero .label{
+    font-size: 0.7rem;
+    margin: 0 auto;
+  }
+  .hero .hero-heading{
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  .hero .hero-para{
+    width: 100%;
+    font-size: 1rem;
+  }
+   .hero-text{
+  padding: 0 20px;
+  text-align: center;
+  justify-content: center;
+  }
+  .hero .container{
+    margin: 20px 0 ;
+  }
+  .hero .buttons{
+   flex-wrap: wrap;
+  }
+  .hero .buttons button{
+    width: 100%;
+  }
+   .video-wrapper img{
+    width: 60vw;
+    height: 225px;
+  
+  }
+}
+

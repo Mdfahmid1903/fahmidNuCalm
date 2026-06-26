@@ -74,14 +74,20 @@
           </div>
         </div>
 
-        <div class="video-wrapper" id="videoWrapper" onclick="loadVideo()">
+        <div class="video-wrapper" id="videoWrapper">
           <img src="/pics/pics/thumbnail.png" alt="Video thumbnail" />
-          <button class="play-btn" aria-label="Play video">
+          <button
+            class="play-btn"
+            aria-label="Play video"
+            onclick="loadVideo()"
+          >
             <i class="fa-solid fa-play"></i>
           </button>
         </div>
       </div>
     </section>
+
+    <section class="hero-video display" onclick="loadVideo()"></section>
 
     <script src="script.js"></script>
   </body>
