@@ -43,6 +43,7 @@ body {
 nav {
   width: 100%;
   box-shadow: var(--shadow);
+  position: relative;
 }
 
 nav .container {
@@ -149,6 +150,7 @@ nav .menu {
   nav .options {
     display: none;
   }
+
   nav .menu {
     display: block;
     cursor: pointer;
@@ -187,6 +189,7 @@ nav .options.active{
   
 }
 
+/* hero section */
 .hero{
   width: 100%;
 
