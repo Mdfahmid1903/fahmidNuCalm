@@ -315,7 +315,7 @@ display: none;
    top: 30px ;
    right: 30px;
    font-size: 2rem;
-   color: grey;
+   color: rgb(255, 255, 255);
    cursor: pointer;
 }
 
