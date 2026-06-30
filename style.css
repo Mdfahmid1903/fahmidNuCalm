@@ -78,7 +78,7 @@ nav .options {
 }
 
 nav .options .option {
-  /* position: relative; */
+  position: relative;
   color: var(--texta);
   text-decoration: none;
   transition: var(--transition);
