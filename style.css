@@ -78,7 +78,7 @@ nav .options {
 }
 
 nav .options .option {
-  position: relative;
+  /* position: relative; */
   color: var(--texta);
   text-decoration: none;
   transition: var(--transition);
@@ -378,6 +378,107 @@ display: none;
     width: 60vw;
     height: 225px;
   
+  }
+}
+
+/* trust section */
+
+.trust{
+  width: 100%;
+  color: var(--textb);
+}
+.trust .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 30px 0 30px 0;
+  margin: 0 auto;
+  max-width: var(--max-width);
+}
+
+.trust-heading{
+  font-size: 2rem;
+  font-weight: 500;
+  flex-shrink: 0;
+  color: white;
+}
+
+.trust-list{
+  width: 75%;
+  overflow: hidden;
+}
+.trust-list .list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 35px;
+  margin: 0 auto;
+    font-size: 1.8rem;
+  font-weight: 500;
+  animation: sliding 5s  linear infinite;
+}
+
+
+@keyframes sliding {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+
+
+@media(max-width:1024px){
+  .trust .container{
+    padding: 30px 15px 30px 15px;
+   }
+  .trust-list{
+    width: 80%;
+  }
+
+  .trust-list .list{
+    gap: 35px;
+    font-size: 1.7rem;
+
+  }
+}
+
+@media (max-width:480px){
+     .trust .container{
+      flex-wrap: wrap;
+      justify-content: center;
+     }  
+  
+     .trust-list{
+      width: 90%; 
+     }
+  .trust-list .list{
+    gap: 35px;
+    font-size: 1.2rem;
+
+  }
+
+}
+
+
+@media(max-width:768px){
+  .trust .container{
+    padding: 30px 15px 30px 15px;
+   }
+  .trust-list{
+    width: 70%;
+  }
+
+   .trust-list .list{
+    gap: 35px;
+    font-size: 1.4rem;
+
   }
 }
 
